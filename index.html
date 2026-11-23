@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bono Específico por Bilingüismo · Socialización del instructivo</title>
+<link rel="stylesheet" href="dist/reveal.css">
+<link rel="stylesheet" href="dist/estilos.css">
+</head>
+<body data-escena="portada">
+<canvas id="rombos" aria-hidden="true"></canvas>
+<div id="contador" hidden aria-live="polite"></div>
+<div id="reloj" hidden aria-live="off"><div class="reloj-texto"><span class="n"></span><span class="sep" aria-hidden="true">·</span><span class="t"></span></div><div class="barra"><div class="b"></div></div></div>
+
+<!-- Iconos de línea originales por grupo (trazo 3 px, extremos redondeados) -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <!-- G1: persona con credencial -->
+    <symbol id="ico-g1" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="12" width="34" height="27" rx="4"/>
+        <path d="M20 12 V8 H28 V12"/>
+        <circle cx="18" cy="22" r="3.8"/>
+        <path d="M12.5 33 C12.5 29 23.5 29 23.5 33"/>
+        <path d="M28 22 H35"/>
+        <path d="M28 28 H34"/>
+      </g>
+    </symbol>
+    <!-- G2: megáfono -->
+    <symbol id="ico-g2" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 20 H15 L31 11 V35 L15 26 H9 A2 2 0 0 1 7 24 V22 A2 2 0 0 1 9 20 Z"/>
+        <path d="M15 26 L18 37 H23 L20 29"/>
+        <path d="M36 17 C39 20 39 26 36 29"/>
+        <path d="M40 13 C44.5 18 44.5 28 40 33"/>
+      </g>
+    </symbol>
+    <!-- G3: documento con marca de verificación -->
+    <symbol id="ico-g3" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 7 H29 L37 15 V41 H11 Z"/>
+        <path d="M29 7 V15 H37"/>
+        <path d="M17 19 H25"/>
+        <path d="M17 30 L22 35 L32 24"/>
+      </g>
+    </symbol>
+    <!-- G4: libro abierto -->
+    <symbol id="ico-g4" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 14 C20 11 13 11 7 13 V36 C13 34 20 34 24 37"/>
+        <path d="M24 14 C28 11 35 11 41 13 V36 C35 34 28 34 24 37"/>
+        <path d="M24 14 V37"/>
+        <path d="M12 20 H19"/>
+        <path d="M12 26 H19"/>
+        <path d="M29 20 H36"/>
+        <path d="M29 26 H36"/>
+      </g>
+    </symbol>
+    <!-- G5: pizarrón -->
+    <symbol id="ico-g5" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="10" width="34" height="22" rx="2"/>
+        <path d="M5 32 H43"/>
+        <path d="M16 32 L12 41"/>
+        <path d="M32 32 L36 41"/>
+        <path d="M13 17 H24"/>
+        <path d="M13 23 H21"/>
+        <path d="M32 16 L36 21 L32 26 L28 21 Z"/>
+      </g>
+    </symbol>
+    <!-- G6: nómina con moneda -->
+    <symbol id="ico-g6" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 8 H31 V20"/>
+        <path d="M21 39 H9 V8"/>
+        <path d="M14 15 H25"/>
+        <path d="M14 21 H22"/>
+        <path d="M14 27 H19"/>
+        <circle cx="33" cy="31" r="9"/>
+        <circle cx="33" cy="30.5" r="3.5"/>
+        <path d="M34.8 32.8 L37.2 35.2"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="reveal"><div class="slides">
+
+<!-- ===================== APERTURA ===================== -->
+<section class="portada" data-escena="portada" data-hechas="0">
+  <div class="logo-digebi">
+    <img src="assets/logos/digebi.jpg" alt="DIGEBI">
+  </div>
+  <h1 class="t-entra">Bono Específico por Bilingüismo</h1>
+  <p class="entrada c-entra" style="margin-top:28px">Socialización del instructivo para los enlaces de las Direcciones Departamentales de Educación</p>
+  <p class="evento c-entra"><strong>Dirección General de Educación Bilingüe Intercultural (DIGEBI)</strong><br>Hotel Clarion Suite, Ciudad de Guatemala, 24 al 26 de noviembre de 2026</p>
+  <aside class="notes">Bienvenida. Seis hilos de color: cada uno es una dependencia del MINEDUC que interviene en el bono. Al final de la jornada los veremos trenzados en uno solo: la nómina que llega a pago. Teclas: flechas para avanzar, S abre esta vista de notas, T reinicia el temporizador del bloque.</aside>
+</section>
+
+<section class="centrada diapo-sirve" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">Para qué sirve el instructivo</h2>
+  <div class="cuerpo-centro">
+    <p class="entrada c-entra">Ordena cómo se solicita, revisa, evalúa, verifica y valida el bono, y quién hace cada paso.</p>
+    <p class="c-entra">Aplica al <strong>personal docente bilingüe, técnico y administrativo</strong> de los renglones 011, 021 y 022, y a las seis dependencias del Ministerio de Educación que intervienen en el trámite.</p>
+    <p class="c-entra">Abarca desde la divulgación y la presentación de solicitudes hasta el traslado de la nómina para el pago. No reemplaza los procedimientos de suspensión, recuperación o reintegro.</p>
+  </div>
+  <aside class="notes">Propósito: que la información con la que se decide quién cumple sea confiable, verificable y esté respaldada en la plataforma. Insistir en que el enlace es quien sostiene buena parte de esa trazabilidad.</aside>
+</section>
+
+<section class="centrada diapo-deps" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">Seis dependencias, seis hilos</h2>
+  <div class="cuerpo-centro">
+    <p class="entrada c-entra">Cada una actúa en un momento distinto del proceso.</p>
+    <ul class="lista">
+      <li class="fragment dep-digebi" data-dep="digebi"><strong>DIGEBI</strong>, por medio de la SUBPLICE: convoca, coordina, valida y consolida la nómina</li>
+      <li class="fragment dep-dideduc" data-dep="dideduc"><strong>DIDEDUC</strong>, por medio del enlace: revisa expedientes, carga resultados y verifica la EBI en el aula</li>
+      <li class="fragment dep-dicoms" data-dep="dicoms"><strong>DICOMS</strong>: publica y divulga los materiales oficiales</li>
+      <li class="fragment dep-digeduca" data-dep="digeduca"><strong>DIGEDUCA</strong>: aplica y califica la evaluación de comprensión lectora</li>
+      <li class="fragment dep-digemoca" data-dep="digemoca"><strong>DIGEMOCA</strong>: acompaña la verificación de la EBI</li>
+      <li class="fragment dep-direh" data-dep="direh"><strong>DIREH</strong>: gestiona el pago del bono</li>
+    </ul>
+  </div>
+  <aside class="notes">Cada vez que avance, se ilumina el hilo de esa dependencia. SUBPLICE es la Subdirección de Políticas Lingüísticas y Culturales Educativas de DIGEBI.</aside>
+</section>
+
+<section class="diapo-grafica" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">¿Quién realiza cada actividad?</h2>
+  <p class="entrada c-entra">El enlace departamental tiene a su cargo directo 6 de las 29 actividades: la 4, 12, 20, 23, 24 y 25.</p>
+  <div data-grafica="responsables"></div>
+  <p class="fuente-grafica">Elaboración propia con base en la columna “Responsable” del instructivo. Compartidas: 14, 15 y 16 (DIGEDUCA y SUBPLICE) y 23 (enlace y DIGEMOCA).</p>
+  <aside class="notes">DICOMS no es responsable directo de ninguna actividad, pero publica los materiales en la actividad 7. La actividad 2 la realiza el Director Departamental; las otras seis de DIDEDUC, el enlace.</aside>
+</section>
+
+<section class="centrada diapo-legal" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">Base legal</h2>
+  <div class="cuerpo-centro">
+    <p class="entrada c-entra">El bono existe desde 2007; sus procedimientos se reformaron por última vez en 2024.</p>
+    <div class="linea-tiempo">
+      <div class="hito fragment"><span class="anio">1985</span><b>Constitución Política</b><span>Artículo 76: enseñanza bilingüe</span></div>
+      <div class="hito fragment"><span class="anio">2003</span><b>Decreto 19-2003</b><span>Ley de Idiomas Nacionales, arts. 56 a 58</span></div>
+      <div class="hito fragment"><span class="anio">2004</span><b>A. G. 22-2004</b><span>Generaliza la EBI en el sistema educativo</span></div>
+      <div class="hito fragment clave"><span class="anio">2007</span><b>A. G. 144-2007</b><span>Establece el pago del bono</span></div>
+      <div class="hito fragment"><span class="anio">2007</span><b>A. M. 1449-2007</b><span>Procedimientos técnicos y administrativos</span></div>
+      <div class="hito fragment"><span class="anio">2019</span><b>A. M. 374-2019</b><span>Reforma al A. M. 1449-2007</span></div>
+      <div class="hito fragment"><span class="anio">2021</span><b>A. M. 2116-2021</b><span>Reforma al A. M. 1449-2007</span></div>
+      <div class="hito fragment clave"><span class="anio">2024</span><b>A. M. 2799-2024</b><span>Reforma vigente, 8 de noviembre de 2024</span></div>
+    </div>
+  </div>
+  <aside class="notes">A. G. = Acuerdo Gubernativo; A. M. = Acuerdo Ministerial. Los dos hitos resaltados: la creación del bono (144-2007) y la reforma más reciente (2799-2024).</aside>
+</section>
+
+<section class="centrada diapo-requisitos" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">Quién puede optar y qué presenta</h2>
+  <div class="cuerpo-centro">
+    <div class="columnas c-entra">
+      <div>
+        <h3>Requisitos</h3>
+        <ul class="lista">
+          <li><strong>Docentes</strong> que desarrollan educación bilingüe multicultural e intercultural en el aula, en establecimientos públicos</li>
+          <li><strong>Personal técnico y administrativo</strong> que ejecuta o coordina acciones de EBI</li>
+          <li>Todos: <strong>evaluación lingüística aprobada</strong>, con constancia del MINEDUC o de la ALMG, en el idioma de su comunidad</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Expediente de solicitud</h3>
+        <ul class="lista">
+          <li>Copia del <strong>DPI</strong> en PDF, completa y legible</li>
+          <li><strong>Certificación lingüística</strong> vigente, del MINEDUC o de la ALMG</li>
+          <li><strong>Solicitud</strong> generada por la plataforma, firmada con lapicero azul y adjuntada en PDF</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">ALMG: Academia de Lenguas Mayas de Guatemala. La firma con lapicero azul es un detalle que genera muchas devoluciones: recalcarlo.</aside>
+</section>
+
+<section class="diapo-grafica" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">29 actividades en seis grupos</h2>
+  <p class="entrada c-entra">Hay dos filtros de 70 puntos: comprensión lectora y verificación de la EBI en el aula.</p>
+  <div data-grafica="grupos"></div>
+  <p class="fuente-grafica">Elaboración propia con base en el instructivo de procedimientos (29 actividades en seis grupos).</p>
+  <aside class="notes">Mapa de la mañana: G1 a G3 hasta las 9:15; G4 con DIGEDUCA hasta las 10:30; G5 y G6 después de la refacción, hasta las 12:00.</aside>
+</section>
+
+<section class="diapo-grafica centrada diapo-agenda" data-escena="banda" data-hechas="0">
+  <h2 class="t-entra">La mañana del 25 de noviembre</h2>
+  <div class="cuerpo-centro">
+    <p class="entrada c-entra">Tres bloques de trabajo; el más largo es la evaluación de comprensión lectora con DIGEDUCA.</p>
+    <div data-grafica="agenda"></div>
+    <p class="fuente-grafica">Agenda de socialización del 25 de noviembre de 2026 (225 minutos en total, de 8:15 a 12:00).</p>
+  </div>
+  <aside class="notes">El temporizador de cada bloque arranca solo al entrar a su separador; T lo reinicia.</aside>
+</section>
+
+<!-- ===================== BLOQUE 1 ===================== -->
+<section class="bloque" data-escena="grupo" data-hechas="0" data-foco="1-12" data-bloque="1" data-min="60" data-nombre-bloque="Bloque 1: G1 a G3">
+  <div class="horario c-entra">8:15 a 9:15, 60 minutos</div>
+  <h2 class="t-entra">Del enlace a la solicitud</h2>
+  <ol class="c-entra">
+    <li class="dep-digebi"><div class="bloque-item-cab"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g1"/></svg></span><b>G1</b></div>Nombramiento del enlace departamental</li>
+    <li class="dep-dicoms"><div class="bloque-item-cab"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g2"/></svg></span><b>G2</b></div>Promoción y divulgación de la información</li>
+    <li class="dep-dideduc"><div class="bloque-item-cab"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g3"/></svg></span><b>G3</b></div>Convocatoria, solicitud y revisión documental</li>
+  </ol>
+  <aside class="notes">El temporizador arriba a la derecha empezó a contar los 60 minutos de este bloque. Si se inició antes de tiempo, presione T para reiniciarlo.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="0" data-foco="1-4" data-bloque="1" data-min="60" data-nombre-bloque="Bloque 1: G1 a G3">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g1"/></svg></span><span class="g">G1</span><h2 class="t-entra">Nombramiento del enlace departamental</h2></div>
+  <div data-flujo="g1"></div>
+  <p class="clave-grupo">Sin usuario no hay revisión: el enlace pide su acceso a la plataforma con el <strong>formulario DES&#8209;FOR&nbsp;05</strong>.</p>
+  <aside class="notes">1. DIGEBI pide por oficio la designación. 2. La DIDEDUC designa y remite el oficio. 3. DIGEBI envía lineamientos. 4. El enlace solicita usuario con el DES&#8209;FOR&nbsp;05.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="4" data-foco="5-7" data-bloque="1" data-min="60" data-nombre-bloque="Bloque 1: G1 a G3">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g2"/></svg></span><span class="g">G2</span><h2 class="t-entra">Promoción y divulgación</h2></div>
+  <div data-flujo="g2"></div>
+  <p class="clave-grupo">Los materiales deben incluir, como mínimo, <strong>fechas, requisitos, documentos, procedimiento y canales de consulta</strong>.</p>
+  <aside class="notes">La solicitud de divulgación a DICOMS se hace con un mes de anticipación a la convocatoria. DICOMS pide a los encargados de comunicación de cada DIDEDUC que publiquen y socialicen el material.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="7" data-foco="8-12" data-bloque="1" data-min="60" data-nombre-bloque="Bloque 1: G1 a G3">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g3"/></svg></span><span class="g">G3</span><h2 class="t-entra">Convocatoria y solicitud</h2></div>
+  <div data-flujo="g3"></div>
+  <p class="clave-grupo">El solicitante tiene <strong>hasta 2 oportunidades</strong> para corregir; si no cumple, la solicitud se declina.</p>
+  <aside class="notes">Actividad 11: el sistema genera la solicitud; el solicitante la descarga, imprime, firma con lapicero azul, escanea y la adjunta en PDF. Actividad 12: la revisión sigue el cronograma de DIGEBI.</aside>
+</section>
+
+<section class="centrada diapo-revision" data-escena="banda" data-hechas="12" data-foco="8-12" data-bloque="1" data-min="60" data-nombre-bloque="Bloque 1: G1 a G3">
+  <h2 class="t-entra">La revisión documental del enlace</h2>
+  <div class="cuerpo-centro">
+    <p class="entrada c-entra">Antes de aprobar un expediente, el enlace comprueba cuatro cosas en cada documento.</p>
+    <div class="claves c-entra" style="grid-template-columns:repeat(4,1fr)">
+      <div class="dep-dideduc"><b>Existe</b><span>Están los tres documentos requeridos</span></div>
+      <div class="dep-dideduc"><b>Se lee</b><span>El archivo es legible y está completo</span></div>
+      <div class="dep-dideduc"><b>Está íntegro</b><span>No le faltan páginas ni partes</span></div>
+      <div class="dep-dideduc"><b>Corresponde</b><span>Coincide con los datos de la solicitud</span></div>
+    </div>
+    <p class="clave-grupo c-entra" style="margin-top:56px">Queda bajo responsabilidad del revisor que el expediente cumpla con todos los criterios.</p>
+  </div>
+  <aside class="notes">Casos frecuentes de devolución: DPI incompleto, certificación vencida, solicitud sin firma o firmada en otro color. Espacio para consultas del bloque.</aside>
+</section>
+
+<!-- ===================== BLOQUE 2 ===================== -->
+<section class="bloque" data-escena="grupo" data-hechas="12" data-foco="13-21" data-bloque="2" data-min="75" data-nombre-bloque="Bloque 2: G4 (DIGEDUCA)">
+  <div class="horario c-entra">9:15 a 10:30, 75 minutos</div>
+  <div class="bloque-titulo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g4"/></svg></span><h2 class="t-entra">Evaluación de comprensión lectora</h2></div>
+  <ol class="c-entra">
+    <li class="dep-digebi"><b>13</b>DIGEBI traslada la nómina</li>
+    <li class="dep-digeduca"><b>14–18</b>DIGEDUCA programa, aplica y califica</li>
+    <li class="dep-dideduc"><b>19–21</b>Resultados a la DIDEDUC y a la plataforma</li>
+  </ol>
+  <aside class="notes">Bloque a cargo de DIGEDUCA. Temporizador de 75 minutos.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="12" data-foco="13-18" data-bloque="2" data-min="75" data-nombre-bloque="Bloque 2: G4 (DIGEDUCA)">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g4"/></svg></span><span class="g">G4</span><h2 class="t-entra">Aplicación y resultados</h2></div>
+  <div data-flujo="g4a"></div>
+  <p class="clave-grupo">La evaluación se aprueba con <strong>70 puntos o más</strong>. Quien no los alcanza no continúa a la verificación de la EBI.</p>
+  <aside class="notes">La evaluación mide comprensión lectora en idiomas mayas, xinka o garífuna. DIGEDUCA debe distinguir en su registro a quienes fueron evaluados, a quienes no asistieron y los casos con incidencia pendiente.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="18" data-foco="19-21" data-bloque="2" data-min="75" data-nombre-bloque="Bloque 2: G4 (DIGEDUCA)">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g4"/></svg></span><span class="g">G4</span><h2 class="t-entra">Carga y verificación en la plataforma</h2></div>
+  <div data-flujo="g4b"></div>
+  <p class="clave-grupo">El enlace asocia cada resultado con su <strong>expediente y código de empleado</strong>; si algo no coincide, se rectifica antes de validar.</p>
+  <aside class="notes">Actividad 20: los resultados que se cargan son los oficiales, trasladados por DIGEDUCA. Actividad 21: SUBPLICE verifica que coincidan con las nóminas.</aside>
+</section>
+
+<section class="centrada diapo-nomina" data-escena="banda" data-hechas="21" data-foco="13-21" data-bloque="2" data-min="75" data-nombre-bloque="Bloque 2: G4 (DIGEDUCA)">
+  <h2 class="t-entra">Lo que viaja en la nómina</h2>
+  <div class="cuerpo-centro">
+    <p class="entrada c-entra">DIGEBI verifica que la nómina que traslada a DIGEDUCA tenga, para cada persona:</p>
+    <div class="campos c-entra">
+      <span>Identificador de solicitud</span><span>Código de empleado</span><span>Nombre</span><span>DIDEDUC</span>
+      <span>Establecimiento o dependencia</span><span>Idioma maya, xinka o garífuna</span><span>Datos de contacto</span>
+    </div>
+    <p class="clave-grupo c-entra" style="margin-top:56px"><strong>No asistir no es un resultado.</strong> DIGEDUCA registra aparte a quienes no se presentaron y a los casos con incidencia pendiente.</p>
+  </div>
+  <aside class="notes">Las coincidencias de identidad se revisan antes del traslado, conservando la relación con el expediente de origen.</aside>
+</section>
+
+<!-- ===================== BLOQUE 3 ===================== -->
+<section class="bloque" data-escena="grupo" data-hechas="21" data-foco="22-29" data-bloque="3" data-min="70" data-nombre-bloque="Bloque 3: G5 y G6">
+  <div class="horario c-entra">10:50 a 12:00, 70 minutos</div>
+  <h2 class="t-entra">De la verificación al pago</h2>
+  <ol class="c-entra">
+    <li class="dep-digemoca"><div class="bloque-item-cab"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g5"/></svg></span><b>G5</b></div>Verificación de la EBI en el aula y validación de resultados</li>
+    <li class="dep-direh"><div class="bloque-item-cab"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g6"/></svg></span><b>G6</b></div>Traslado de la nómina a Recursos Humanos y pago</li>
+  </ol>
+  <aside class="notes">Después de la refacción. Temporizador de 70 minutos.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="21" data-foco="22-26" data-bloque="3" data-min="70" data-nombre-bloque="Bloque 3: G5 y G6">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g5"/></svg></span><span class="g">G5</span><h2 class="t-entra">Verificación de la EBI y validación</h2></div>
+  <div data-flujo="g5"></div>
+  <p class="clave-grupo">Solo llegan a esta etapa quienes aprobaron la comprensión lectora. La verificación es <strong>presencial</strong> y se aprueba con <strong>70 puntos o más</strong>.</p>
+  <aside class="notes">El enlace filtra de la nómina a quienes aprobaron la comprensión lectora y programa la verificación con DIGEBI y DIGEMOCA. Este tema se practica en la tarde: ejercicio de observación e identificación de evidencias por indicador.</aside>
+</section>
+
+<section class="centrada diapo-claves-grandes" data-escena="banda" data-hechas="26" data-foco="22-26" data-bloque="3" data-min="70" data-nombre-bloque="Bloque 3: G5 y G6">
+  <h2 class="t-entra">Lo que queda a cargo del enlace</h2>
+  <div class="cuerpo-centro">
+    <div class="claves c-entra">
+      <div class="dep-dideduc"><b>Programar</b><span>Fechas y logística de la verificación, con DIGEBI y DIGEMOCA</span></div>
+      <div class="dep-dideduc"><b>Verificar</b><span>En el aula o en el puesto, con el instrumento oficial</span></div>
+      <div class="dep-dideduc"><b>Registrar</b><span>El resultado en la plataforma, sin errores</span></div>
+      <div class="dep-dideduc"><b>Cargar</b><span>El instrumento completo, legible y del docente correcto</span></div>
+      <div class="dep-dideduc"><b>Resguardar</b><span>La documentación generada en la verificación</span></div>
+      <div class="dep-digebi"><b>Validar</b><span>Lo hace SUBPLICE; solo lo validado pasa a la nómina</span></div>
+    </div>
+  </div>
+  <aside class="notes">Nota 1 de la actividad 25: queda bajo responsabilidad del enlace el registro correcto de resultados y el resguardo de la documentación de la evaluación EBI.</aside>
+</section>
+
+<section class="diapo-flujo" data-escena="banda" data-hechas="26" data-foco="27-29" data-bloque="3" data-min="70" data-nombre-bloque="Bloque 3: G5 y G6">
+  <div class="cabecera-grupo"><span class="icono-grupo" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#ico-g6"/></svg></span><span class="g">G6</span><h2 class="t-entra">Nómina a Recursos Humanos y pago</h2></div>
+  <div data-flujo="g6"></div>
+  <p class="clave-grupo">La nómina solo incluye a quien aprobó <strong>todas las fases</strong>. DIREH informa a DIGEBI cuando concluye la gestión.</p>
+  <aside class="notes">El traslado a DIREH es mediante oficio. Si DIREH encuentra inconsistencias, devuelve observaciones y DIGEBI corrige y remite la información actualizada.</aside>
+</section>
+
+<!-- ===================== CIERRE ===================== -->
+<section class="centrada diapo-claves-grandes" data-escena="banda" data-hechas="29">
+  <h2 class="t-entra">Lo que no puede fallar</h2>
+  <div class="cuerpo-centro">
+    <div class="claves c-entra">
+      <div class="dep-dideduc"><b>DES&#8209;FOR&nbsp;05</b><span>El enlace pide su usuario antes de abrir la plataforma</span></div>
+      <div class="dep-dideduc"><b>Lapicero azul</b><span>Solicitud firmada y adjuntada en PDF, junto con el DPI y la certificación vigente</span></div>
+      <div class="dep-dideduc"><b>2 correcciones</b><span>Después de dos intentos sin cumplir, la solicitud se declina</span></div>
+      <div class="dep-digeduca"><b>70 puntos</b><span>Mínimo en la evaluación de comprensión lectora</span></div>
+      <div class="dep-digemoca"><b>70 puntos</b><span>Mínimo en la verificación de la EBI en el aula</span></div>
+      <div class="dep-digebi"><b>Solo lo validado</b><span>Pasa a la nómina que DIGEBI traslada a DIREH</span></div>
+    </div>
+  </div>
+  <aside class="notes">Síntesis antes de las consultas. Por la tarde: análisis del instrumento de verificación de EBI y ejercicio de observación. El 26: demostración de la plataforma.</aside>
+</section>
+
+<section class="portada cierre" data-escena="rombo-mayor" data-hechas="29">
+  <div class="logo-digebi">
+    <img src="assets/logos/digebi.jpg" alt="DIGEBI">
+  </div>
+  <h1 class="t-entra" style="font-size:112px">Seis dependencias, un solo expediente</h1>
+  <p class="entrada c-entra" style="margin-top:28px">Preguntas y acuerdos de seguimiento</p>
+  <aside class="notes">Los seis hilos se trenzan: cada dependencia hizo su parte y el resultado es una sola nómina que llega a pago. Abrir consultas y registrar acuerdos.</aside>
+</section>
+
+</div></div>
+<script src="dist/app.js"></script>
+</body>
+</html>
